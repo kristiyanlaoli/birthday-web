@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Sayang 🎂</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== LOADING SCREEN ========== -->
+  <div id="loading-screen">
+    <div class="loading-heart">💗</div>
+    <p>Memuat kejutan untukmu...</p>
+  </div>
+
+  <!-- ========== FLOATING PARTICLES ========== -->
+  <div id="particles-container"></div>
+
+  <!-- ========== MUSIC BUTTON ========== -->
+  <button id="music-btn" title="Play / Pause Music">🎵</button>
+  <audio id="bg-music" loop>
+    <!-- 🎵 EDIT: Ganti src dengan file musik kamu (letakkan di folder /audio/) -->
+    <!-- <source src="audio/lagu.mp3" type="audio/mpeg" /> -->
+  </audio>
+
+  <!-- ========== MAIN WRAPPER ========== -->
+  <main id="app">
+
+    <!-- ===== SECTION 1: HERO / OPENING ===== -->
+    <section class="section hero-section" id="section-hero">
+      <div class="petals-top">🌸🌹🌸🌷🌸🌹🌸</div>
+      <div class="hero-content">
+        <p class="hero-sub reveal">Untuk seseorang yang sangat istimewa...</p>
+        <!-- 🔤 EDIT: Nama penerima -->
+        <h1 class="hero-title reveal">Happy Birthday,<br /><span class="name-highlight">Bunga Cintaku</span> 🎂</h1>
+        <!-- 📅 EDIT: Tanggal ulang tahun -->
+        <p class="hero-date reveal">24 Mei 2026</p>
+        <button class="btn-start reveal" onclick="nextSection()">Buka Pesanku ✉️</button>
+      </div>
+      <div class="scroll-hint">↓ scroll untuk lanjut</div>
+    </section>
+
+    <!-- ===== SECTION 2: FOTO GALLERY ===== -->
+    <section class="section gallery-section" id="section-gallery">
+      <h2 class="section-title reveal">Momen Terindah Kita 📸</h2>
+      <p class="section-sub reveal">Setiap foto menyimpan kenangan yang tak ternilai...</p>
+
+      <div class="gallery-grid reveal">
+        <!-- 🖼️ EDIT: Ganti src dengan foto kamu. Letakkan foto di folder /images/ -->
+        <!-- Contoh: <img src="images/foto1.jpg" alt="Kita berdua" /> -->
+        <!-- Tambah atau kurangi sesuai kebutuhan -->
+        <div class="gallery-item" style="background: linear-gradient(135deg,#ffb3c1,#ff6b9d)">
+          <span class="placeholder-emoji">📷</span>
+          <p>Foto 1<br/><small>images/foto1.jpg</small></p>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#ffd6e7,#ffb3c1)">
+          <span class="placeholder-emoji">📷</span>
+          <p>Foto 2<br/><small>images/foto2.jpg</small></p>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#c8e6c9,#a5d6a7)">
+          <span class="placeholder-emoji">📷</span>
+          <p>Foto 3<br/><small>images/foto3.jpg</small></p>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#ffe0b2,#ffcc80)">
+          <span class="placeholder-emoji">📷</span>
+          <p>Foto 4<br/><small>images/foto4.jpg</small></p>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#e1bee7,#ce93d8)">
+          <span class="placeholder-emoji">📷</span>
+          <p>Foto 5<br/><small>images/foto5.jpg</small></p>
+        </div>
+        <div class="gallery-item" style="background: linear-gradient(135deg,#bbdefb,#90caf9)">
+          <span class="placeholder-emoji">📷</span>
+          <p>Foto 6<br/><small>images/foto6.jpg</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: SURAT CINTA ===== -->
+    <section class="section letter-section" id="section-letter">
+      <div class="letter-envelope reveal">
+        <div class="envelope-top">💌</div>
+        <div class="letter-paper">
+          <h2 class="letter-heading">Surat Untukmu</h2>
+          <div class="letter-body">
+            <!-- 💬 EDIT: Isi pesan / surat cinta di sini -->
+            <p>Sayangku,</p>
+            <p>
+              Hari ini, tepat di hari ulang tahunmu yang spesial, aku ingin kamu tahu betapa berartinya kamu dalam hidupku.
+              Setiap hari bersamamu adalah hadiah yang paling berharga.
+            </p>
+            <p>
+              Kamu adalah alasan senyumku di pagi hari, dan bintang yang menerangi malamku.
+              Terima kasih sudah hadir, sudah menjadi dirimu yang apa adanya — yang selalu membuatku jatuh cinta
+              lagi dan lagi.
+            </p>
+            <p>
+              Di hari istimewamu ini, aku berharap semua impianmu menjadi nyata, dan semua kebaikan
+              kembali padamu berlipat ganda. Kamu pantas mendapatkan segalanya yang terbaik.
+            </p>
+            <p>
+              Selamat ulang tahun, cintaku. 🌹<br />
+              Semoga kita terus bersama selamanya.
+            </p>
+            <!-- ✍️ EDIT: Nama pengirim -->
+            <p class="letter-signature">— Dengan cinta terdalam,<br /><strong>Namamu Di Sini</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: ALASAN MENCINTAI ===== -->
+    <section class="section reasons-section" id="section-reasons">
+      <h2 class="section-title reveal">Alasan Aku Mencintaimu 💕</h2>
+      <p class="section-sub reveal">...karena ada begitu banyak hal darimu yang membuatku jatuh cinta</p>
+
+      <div class="reasons-grid reveal">
+        <!-- 💕 EDIT: Tambah / ubah alasan sesuai keinginan -->
+        <div class="reason-card">
+          <span class="reason-icon">😊</span>
+          <p>Senyummu yang membuat hariku langsung cerah</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-icon">🤗</span>
+          <p>Pelukanmu yang terasa seperti rumah</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-icon">🧠</span>
+          <p>Kecerdasanmu yang selalu membuatku kagum</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-icon">💪</span>
+          <p>Kekuatanmu menghadapi segala tantangan</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-icon">😂</span>
+          <p>Tawamu yang selalu berhasil menghiburku</p>
+        </div>
+        <div class="reason-card">
+          <span class="reason-icon">💖</span>
+          <p>Hatimu yang baik dan penuh kasih sayang</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 5: COUNTDOWN / PENUTUP ===== -->
+    <section class="section closing-section" id="section-closing">
+      <div class="fireworks-container" id="fireworks"></div>
+      <div class="closing-content">
+        <div class="big-cake reveal">🎂</div>
+        <!-- 🔤 EDIT: Nama penerima -->
+        <h2 class="closing-title reveal">Happy Birthday,<br />Bunga Cintaku!</h2>
+        <p class="closing-wish reveal">
+          "Semoga usiamu penuh berkah, hidupmu selalu bahagia,<br />
+          dan cinta kita semakin kuat setiap harinya."
+        </p>
+        <div class="heart-row reveal">💗 💗 💗 💗 💗</div>
+        <!-- ✍️ EDIT: Nama pengirim -->
+        <p class="closing-from reveal">— Dengan segenap cinta, <strong>Namamu Di Sini</strong></p>
+        <button class="btn-restart reveal" onclick="restartJourney()">🔁 Ulangi dari Awal</button>
+      </div>
+    </section>
+
+  </main><!-- end #app -->
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
